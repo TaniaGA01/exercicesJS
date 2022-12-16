@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Vérification du formulaire</title>
+</head>
+<body>
+    <div class="container">
+        <div class="formBlock">
+            <form action="" method="get">
+                <div class="formContent">
+                    <div class="formGrid">
+                        <div class="formColumn">
+                            <label for="firstName" id="label__firstName" class="">Prénom</label>
+                            <input type="text" name="firstName" id="firstName">
+                            <div id="alert__firstName" class="alertBlock deleteMessage">Le prénom ne peut pas contenir nombres ou simboles</div>
+                        </div>
+                        <div class="formColumn">
+                            <label for="lastName" id="label__lastName" class="">Nom</label>
+                            <input type="text" name="lastName" id="lastName">
+                            <div id="alert__lastName" class="alertBlock deleteMessage">Le nom ne peut pas contenir nombres ou simboles</div>
+                        </div>
+                        <div class="formColumn">
+                            <label for="email" id="label__email" class="">Adresse email</label>
+                            <input type="email" name="email" id="email" >
+                            <div id="alert__email" class="alertBlock deleteMessage">Merci de corriger l'adresse email</div>
+                        </div>
+                        <div class="formColumn">
+                            <label for="phone" id="label__phone" class="">Téléphone</label>
+                            <input type="tel" name="phone" id="phone">
+                            <div id="alert__phone" class="alertBlock deleteMessage">Merci de corriger le téléphone</div>
+                        </div>
+                        <div class="formColumn">
+                            <label for="password" id="label__password">Mot de passe</label>
+                            <input type="password" name="password" id="password">
+                            <div id="alert__password" class="alertBlock deleteMessage">
+                                Le mot de passe doit contenir au moins :
+                                <ul>
+                                    <li class="invalid">12 caractères</li>
+                                    <li class="invalid">Une mayuscule</li>
+                                    <li class="invalid">Un caractère spécial</li>
+                                    <li class="invalid">Une chiffre</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="formColumn">
+                            <label for="confPass" id="label__confPass">Confirmation mot de passe</label>
+                            <input type="password" name="confPass" id="confPass">
+                            <div id="alert__confPass" class="alertBlock deleteMessage">
+                                Le mot de passe doit contenir au moins :
+                                <ul>
+                                    <li class="invalid">12 caractères</li>
+                                    <li class="invalid">Une mayuscule</li>
+                                    <li class="invalid">Un caractère spécial</li>
+                                    <li class="invalid">Une chiffre</li>
+                                    <li class="invalid">Il doit corresponde au mot de passe</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="fullColumn">
+                            <button type="submit">envoyer</button>
+                        </div>
+                    </div>
+                    
+                </div>                
+            </form>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

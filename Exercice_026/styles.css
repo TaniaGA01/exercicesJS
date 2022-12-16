@@ -1,0 +1,103 @@
+/*
+Author : Tania GAITAN - Front End developper - UX/UI designer
+2021
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Thasadith:wght@400;700&display=swap');
+
+
+:root{
+    --blue:#071A40;
+    --blueDark: #011526;
+    --green: #858C4D;
+    --greenLight: #D9D7BA;
+    --grayDark: #8C8A80;
+}
+
+html{
+    height: 100%;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    font-family: 'Thasadith', sans-serif;
+    font-weight: 700;
+    flex-direction: column;
+    background-color: var(--blueDark);
+}
+.container{
+    width: 60%;
+    margin: 0 auto;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+.formBlock{
+    width: 100%;
+    background-color: var(--greenLight);
+}
+.formBlock form {
+    width: 100%;
+    color: var(--grayDark);
+}
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+.formContent {
+    padding: 40px;
+}
+.formColumn {
+    display: grid;
+    position: relative;
+}
+.formColumn label{
+    line-height: 2rem;
+}
+.error{
+    color: red !important;
+}
+.borderError{
+    border: 1px solid red !important ;
+}
+.succes{
+    color: green !important;
+}
+.borderSucces{
+    border: 1px solid green !important ;
+}
+.formColumn input {
+    border-style: hidden;
+    border-radius: 0;
+    padding: 10px;
+}
+.fullColumn{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: center;
+}
+.alertBlock {
+    position: absolute;
+    margin-top: 70px;
+    line-height: 1rem;
+    padding: 5px 10px;
+    width: 94%;
+    background-color: rgba(255,255,255,0.8);
+    z-index: 999;
+    font-size: 0.8rem;
+    -webkit-box-shadow: 1px 1px 8px 0px rgb(0 0 0 / 16%);
+    box-shadow: 1px 1px 8px 0px rgb(0 0 0 / 16%);
+}
+.deleteMessage{
+    display: none;
+}
+.showMessage{
+    display: block;
+}
